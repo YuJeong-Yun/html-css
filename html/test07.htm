@@ -1,0 +1,81 @@
+﻿<html>
+ <head>
+  <title>form-1</title>
+ </head>
+
+ <body>
+  <h1>form-1</h1>
+  <form action="test.jsp" method="post">
+   <p>
+    label 태그로 input의 설명문을 표시하고
+    label에는 for의 값을, input에는 id의 값을 서로 일치시켜서 연결함
+   </p>
+
+   <label for="nm">name</label> <input type="text" id="nm">
+   <label for="id">id</label> <input type="text" id="id">
+
+
+
+   <h1>form요소들 </h1>
+   <hr>
+    <h2>1. input type="text" 주관식. 한 줄 글상자</h2>
+    <input type="text">
+    
+
+   <hr>
+    <h2>2. input type="password" 주관식. 암호 글상자</h2>
+    <label>password</label> <input type="password">
+
+
+   <hr>
+    <h2>3. input type="radio" 단일 선택형 객관식. 라디오버튼</h2>
+    동일한 질문에 대한 선택 항목들끼리는 서로 <b>name</b>의 값을 일치시켜야 중복 선택이 안 됨. <br>
+    초기값으로 지정할 항목에는 <b>checked</b>(checked="checked") 추가함. <br><br>
+    등원시 소요시간은?<br>
+    <input type="radio" name="tm" id="tm1"> <label for="tm1">10분 이내</label> <br>
+    <input type="radio" name="tm" id="tm2" checked="checked"> <label for="tm2">10분~30분 이내</label> <br>
+    <input type="radio" name="tm" id="tm3"> <label for="tm3">30분~1시간 이내</label> <br>
+    <input type="radio" name="tm" id="tm4"> <label for="tm4">1시간 이상</label> <br>
+
+
+   <hr>
+    <h2>4. input type="checkbox" 다중선택형 객관식. 체크박스</h2>
+    초기값으로 지정할 항목에는 <b>checked</b>(checked="checked") 추가함. <br><br>
+    등원시 이동수단은?<br>
+    <label> <input type="checkbox" checked> 도보</label>
+    <label> <input type="checkbox"> 승용차</label>
+    <label> <input type="checkbox"> 지하철</label>
+    <label> <input type="checkbox" checked> 버스</label>
+    <label> <input type="checkbox"> 승용차</label>
+
+
+   <hr>
+    <h2>5. input type="submit/reset/<i>button</i> " 전송/초기화/일반 버튼 </h2>
+    사용자가 입력한 정보를 서버에 전송하거나 전체 초기화하는 폼과 관련된 버튼,
+    특정 목적의 스크립트를 결합해 사용하는 일반 버튼이 있다.
+    <b>value</b>의 값으로 버튼의 글자를 지정. <br>
+
+    <input type="submit" value="전송">
+    <input type="reset" value="취소"> <br>
+
+    <input type="button" value="Button" onclick="alert('Why~~?');">
+
+   <hr>
+    <h2>button ... /button </h2>
+    <button>전송 </button>
+    <button type="reset"><b>초기</b>화 </button>
+    <button type="button">
+     <img src="img/gif/arrow.gif">Button </button>
+
+
+   <hr>
+    <h2>6. input type=" " </h2>
+    <label> </label> <input type="">
+
+
+  </form>
+
+
+ </body>
+
+</html>
