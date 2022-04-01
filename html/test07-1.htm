@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <title>form-2</title>
+ </head>
+ <body>
+  <nav>
+   <a href="test07.htm">form-1</a>
+   <a href="test07-1.htm">form-2</a>
+  </nav>
+  <hr>
+
+  <h1>form-2</h1>
+  <form action="test.jsp" method="post">
+
+  <hr>
+  <h1>[ html5 form 요소] </h1>
+
+
+  <hr>
+  <h2>1. input type="time" 시간 (오전/오후 시분)을 지정하는 요소</h2>
+  <input type="time">
+
+  <hr>
+  <h2>2. input type="date" 날짜 (연월일)를 지정하는 요소</h2>
+  <input type="date"> <br>
+  min="1900-01-01" max="2200-12-31"로 최소 최대값 제한
+  <input type="date" min="1900-01-01" max="22200-12-31">
+
+  <hr>
+  <h2>3. input type="datetime-local" 시간과 날짜(연월일 오전/오후 시분)을 지정하는 요소</h2>
+  <input type="datetime-local">
+
+  <hr>
+  <h2>4. input type="week" 날짜(연주)를 지정하는 요소</h2>
+  <input type="week">
+
+  <hr>
+  <h2>5. input type="month" 날짜(연월)를 지정하는 요소</h2>
+  <input type="month">
+
+  <hr>
+  <h2>6. input type="number" 숫자값을 지정하는 요소</h2>
+  <input type="number"> <br>
+  <b> min="0" </b> <input type="number" min="0">로 최소값 제한 <br>
+  <b> max="0" </b> <input type="number" max="10000">로 최대값 제한 <br>
+  <b> step="12" </b> <input type="number" step="12">로 증감 간격 <br>
+
+  <hr>
+  <h2>7. input type="range" 범위내의 값을 지정하는 요소</h2>
+  <input type="range">
+
+  <hr>
+  <h2>8. input type="tel" 연락처(전화번호)를 지정하는 요소</h2>
+  모바일 브라우저에서 가상 키패드가 숫자 형식으로 바뀌고 전화 걸기 가능 <br>
+  <input type="tel">
+
+  <hr>
+  <h2>9. input type="email" 연락처(이메일)를 지정하는 요소</h2>
+  브라우저에서 알맞은 형식인지 체크해 줌(@유무 등) <br>
+  모바일 브라우저에서 가상 키패드가 영문 형식으로 바뀌고 @, .com등 나올 수 있음. <br>
+  <label>email <input type="email"></label>
+
+  <hr>
+  <h2>10. input type="url" 연락처(웹주소)를 지정하는 요소</h2>
+  브라우저에서 알맞은 형식인지 체크해 줌(http:// 유무 등) <br>
+  모바일 브라우저에서 가상 키패드가 영문 형식으로 바뀌고 http://, .com등 나올 수 있음. <br>
+  <label>블로그주소 <input type="url"></label>
+
+  <hr>
+  <h2>11. input type="color" 색상값을 지정하는 요소</h2>
+  <input type="color">
+
+
+  <hr>
+  <h1>[ input 속성들] </h1>
+  <h2>size="n" 상자의 길이</h2>
+  <input type="text" size="50">
+
+  <h2>2. maxlength="n" 최대값 지정</h2>
+  <input type="text" maxlength="6">
+
+  <h2>3. minlength="n" 최소값 지정</h2>
+  <input type="text" minlength="3" >
+
+  <h2>4. placeholder="***" 입력예시나 설명 등을 지정</h2>
+  <input type="text" placeholder="4~8자 이내의 영문과 숫자 조합"> <br>
+  <label>tel <input type="tel" placeholder="010-7777-8888"></label>
+
+  <h2>5. autocomplete="on/off" 자동완성 기능을 켬/끔</h2>
+  <label for="name">name</label>
+  <input type="text"autocomplete="off" id="name">
+
+  <h2>6. autofocus(aotofocus="autofocus") 자동 포커싱 지정</h2>
+  <input type="text" autofocus>
+
+  <h2>7. required (required="required") 필수입력 요소로 지정 </h2>
+  <input type="text" required >
+  
+  <h2>8. readonly (readonly="readonly") 읽기만 가능한 요소로 지정</h2>
+  <input type="text" readonly value="읽어만 보소" >
+
+  <h2>9. disabled (disabled="disabled") 사용 불가한 요소로 지정 </h2>
+  전송시 함께 전달 불가
+  <input type="text" disabled value="silver">
+
+
+  <hr>
+  <h1>fieldset legend</h1>
+  폼 요소들을 그룹화하여 묶어서 표현.
+  fieldset로 묶어주고 해당 그룹의 제목을 legend로 지정.
+  <fieldset>
+   <legend>필수입력</legend>
+  </fieldset>
+
+  <hr>
+  <input type="submit"> <input type="reset">
+
+  </form>
+
+  
+ </body>
+</html>
+
