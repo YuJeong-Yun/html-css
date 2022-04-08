@@ -1,0 +1,120 @@
+﻿<html>
+ <head>
+  <title>a로 내부 링크 걸기</title>
+ </head>
+ <body>
+ <nav>
+  <a href="test06.htm">링크-1</a>
+  <a href="test06.htm#link">링크-1(링크로 나타내기)</a>
+ </nav>
+ 
+
+
+  <h1>[링크-2]a로 링크 걸기</h1>
+  (페이지 내의 특정한 곳을 찾아서 이동하는 링크)
+  <pre>
+      &lt;tag id="#def"&gt;    특정한 곳(tag)에 id를 추가하여 주소로 활용
+       ...
+       ...
+
+     &lt;a href="#id값"&gt; ... &lt;/a&gt; --- id 값이 def면 위로 이동,
+                                   id 값이 abc면 아래로 이동
+       ...
+       ...
+
+      &lt;tag id="#abc"&gt;
+
+   * a href="abc.htm#id값" 은 웹 문서 abc의 특정 id를 찾아 이동
+  </pre>
+
+ <h1>photo gallery</h1>
+ <nav id="nav">
+  <a href="#ph01">photo-1</a>
+  <a href="#ph02">photo-2</a>
+  <a href="#ph03">photo-3</a>
+  <a href="#ph04">photo-4</a>
+  <a href="#ph05">photo-5</a>
+  <a href="#ph06">photo-6</a>
+  <a href="#ph07">photo-7</a>
+  <a href="#ph08">photo-8</a>
+  <a href="#ph09">photo-9</a>
+  <a href="#ph10">photo-10</a>
+ </nav>
+ <br><br><br><br>
+
+
+ <hr>   
+ <h2 id="ph01">photo-01</h2>
+ <img src="img/img (1).jpg" alt="img (1)" height="500">
+ <a href="#nav">gallery menu</a> 
+ <br><br><br><br><br><br><br><br>
+
+ <hr>   
+ <h2 id="ph02">photo-02</h2>
+ <img src="img/img (2).jpg" alt="img (2)" height="500">
+ <a href="#nav">gallery menu</a> 
+ <br><br><br><br><br><br><br><br>
+
+ <hr>   
+ <h2 id="ph03">photo-03</h2>
+ <img src="img/img (3).jpg" alt="img (3)" height="500">
+ <a href="#nav">gallery menu</a> 
+ <br><br><br><br><br><br><br><br>
+
+ <hr>   
+ <h2 id="ph04">photo-04</h2>
+ <img src="img/img (4).jpg" alt="img (4)" height="500">
+ <a href="#nav">gallery menu</a> 
+ <br><br><br><br><br><br><br><br>
+
+ <hr>   
+ <h2 id="ph05">photo-05</h2>
+ <img src="img/img (5).jpg" alt="img (5)" height="500">
+ <a href="#nav">gallery menu</a> 
+ <br><br><br><br><br><br><br><br>
+
+ <hr id="ph06">   
+ <h2>photo-06</h2>
+ <img src="img/img (6).jpg" alt="img (6)" height="500">
+ <a href="#nav">gallery menu</a> 
+ <br><br><br><br><br><br><br><br>
+
+ <hr>   
+ <h2 id="ph07">photo-07</h2>
+ <img src="img/img (7).jpg" alt="img (7)" height="500">
+ <a href="#nav">gallery menu</a> 
+ <br><br><br><br><br><br><br><br>
+
+ <hr>   
+ <h2 id="ph08">photo-08</h2>
+ <img src="img/img (8).jpg" alt="img (8)" height="500">
+ <a href="#nav">gallery menu</a> 
+ <br><br><br><br><br><br><br><br>
+
+ <hr>   
+ <h2 id="ph09">photo-09</h2>
+ <img src="img/img (9).jpg" alt="img (9)" height="500">
+ <a href="#nav">gallery menu</a> 
+ <br><br><br><br><br><br><br><br>
+
+ <hr>   
+ <h2 id="ph10">photo-10</h2>
+ <img src="img/img (10).jpg" alt="img (10)" height="500">
+ <a href="#nav">gallery menu</a> 
+ <br><br><br><br><br><br><br><br>
+
+
+ <a href="#">↑top</a>
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

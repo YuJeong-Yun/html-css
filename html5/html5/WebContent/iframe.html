@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>iframe</title>
+</head>
+<body> 
+	<h1>iframe</h1>
+	브라우저창 안에 또다른 공간을 만들어 새로운 내용을 동시에 보여줌
+	<iframe>iframe을 지원하지 않는 브라우저 사용자용 메세지</iframe>
+	
+	<ul>
+		<li>src="경로" iframe안에 보여줄 내용 지정</li>
+		<li>width="n", height="n" iframe의 가로 크기, 세로 크기 설정</li>
+	</ul>
+
+	<hr>
+	<h1>iframe안에 보여줄 수 있는 것들</h1>
+	<h2>1. iframe src="URL"</h2>
+	<iframe src="https://itwillbs.co.kr/" width="800"></iframe>
+
+	<h2>2. iframe src="html경로"</h2>
+	<iframe src="test07.htm" width="700" height="500"></iframe>
+
+	<h2>3. iframe src="이미지 경로"</h2>
+	<iframe src="img/img1.jpg" width="640" height="427"></iframe>
+	
+	<h2>4. iframe src="동영상 경로"</h2>
+	<iframe src="sunrise.mp4"></iframe>
+	
+	<h2>5. iframe src="텍스트 파일 경로"</h2>
+	<iframe src="text.txt"></iframe>
+	
+	<hr>
+	<h1>iframe 안에 링크 열어주기</h1>	
+	
+	<iframe src="test01.htm" width="1000" height="600" name="htmlbox"></iframe>
+	<nav>
+		<a href="test01.htm" target="htmlbox">test01</a>
+		<a href="test02.htm" target="htmlbox">test02</a>
+		<a href="test03.htm" target="htmlbox">test03</a>
+		<a href="test04.htm" target="htmlbox">test04</a>
+		<a href="test05.htm" target="htmlbox">test05</a>
+		<a href="test06.htm" target="htmlbox">test06</a>
+		<a href="test06-1.htm" target="htmlbox">test06-1</a>
+		<a href="test07.htm" target="htmlbox">test07</a>
+		<a href="test07-1.htm" target="htmlbox">test07-1</a>
+	</nav>
+	
+</body>
+</html>

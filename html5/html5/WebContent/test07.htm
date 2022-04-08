@@ -1,0 +1,193 @@
+﻿<html>
+ <head>
+  <title>form-1</title>
+ </head>
+ <body>
+  <nav>
+   <a href="test07.htm">form-1</a>
+   <a href="test07-1.htm">form-2</a>
+  </nav>
+  <hr>
+
+  <h1>form-1</h1>
+  <form action="test.jsp" method="post">
+  <p>
+   label태그로 input의 설명문을 표시하고 <br>
+   label에는 for의 값을, input에는 id의 값을 서로 일치시켜서 연결함
+  </p>
+  <label for="nm">name</label> <input type="text" id="nm">
+  <label for="id">id</label> <input type="text" id="id">
+ 
+  <h1>form요소들</h1>
+  <hr>
+
+
+  <h2>1. input type="text" 주관식. 한 줄 글상자</h2>
+  <input type="text">
+
+
+  <hr>
+  <h2>2. input type="password" 주관식. 암호 글상자</h2>
+  <label>password</label> <input type="password">
+ 
+
+  <hr>
+  <h2>3. input type="radio" 단일선택형 객관식. 라디오버튼</h2>
+  동일한 질문에 대한 선택 항목들끼리는 서로 <b>name</b>의 값을 일치시켜야 중복선택이 안 됨. <br>
+  초기값으로 지정할 항목에는 <b>checked</b> (checked="checked") 추가함.<br>
+
+  등원시 소요시간은?<br>
+  <input type="radio" name="tm" id="tm1"> <label for="tm1">10분 이내</label>  <br>
+  <input type="radio" name="tm" id="tm2" checked> <label for="tm2">10분~30분 이내</label> <br>
+  <input type="radio" name="tm" id="tm3"> <label for="tm3">30분~1시간 이내</label> <br>
+  <input type="radio" name="tm" id="tm4"> <label for="tm4">1시간 이상</label>
+
+  <hr>
+  <h2>4. input type="checkbox" 다중선택형 객관식. 체크박스</h2> 
+  초기값으로 지정할 항목에는 <b>checked</b> (checked="checked") 추가함.<br>
+  등원시 이동수단은?<br>
+  <label> <input type="checkbox" checked> 도보</label>
+  <label> <input type="checkbox"> 자전거</label>
+  <label> <input type="checkbox"> 지하철</label>
+  <label> <input type="checkbox" checked> 버스</label>
+  <label> <input type="checkbox"> 승용차</label> 
+
+
+  <hr>
+  <h2>5. textarea ... /textarea   주관식. 큰 글상자</h2>
+  <textarea></textarea> <br>
+  가로 크기는 cols="n", 세로는 rows="n"로 지정<br>
+  <textarea cols="30" rows="6">자기소개를 해봅시다</textarea>
+
+
+  <hr>
+  <h2>6. select ... /select 펼침목록(드롭다운리스트) 공간절약형 객관식. </h2>
+  option태그로 실제 선택할 항목을 지정. 
+
+  <p>등원시 소요시간은?
+  <select>
+   <option>10분 이내</option>
+   <option>10분~30분 이내</option>
+   <option>30분~1시간 이내</option>
+   <option>1시간 이상</option>
+  </select>
+  </p><br>
+
+  □ <b>초기값</b>으로 지정할 항목(option)에는 <b>selected(selected="selected")</b>를 추가.
+  <p>등원시 소요시간은?
+  <select>
+   <option>10분 이내</option>
+   <option>10분~30분 이내</option>
+   <option selected>30분~1시간 이내</option>
+   <option>1시간 이상</option>
+  </select>
+  </p><br>
+
+  □ <b>다중선택</b>이 가능하게 <b>multiple</b>(multiple="multiple")를 추가. 박스형으로 변경됨.
+  <p> 등원시 이동수단은? <br>
+  <select multiple>
+   <option>도보</option> 
+   <option selected>자전거</option>   
+   <option>지하철</option>   
+   <option>버스</option>   
+   <option>승용차</option> 
+  </select>
+  </p><br>
+
+  □ <b>박스형</b>으로 변경시 <b>size="n"</b>를 추가. (n개의 항목이 보이는 상자)
+  <p>
+  복습을 원하는 시간은?<br>
+  <select size="5">
+   <option>1교시</option>
+   <option>2교시</option>
+   <option>3교시</option>
+   <option>4교시</option>
+   <option>5교시</option>
+   <option>6교시</option>
+   <option>7교시</option>
+   <option>8교시</option>
+   <option>수업이후</option>
+  </select>
+  </p><br>
+
+  □ option들을 그룹화하여 나타낼 때 <b>optgroup</b> 태그로 묶어주고 속성 <b>label</b>을 추가하여 해당 옵션그룹의 주제(제목)을 표시한다.
+  <p> 상담을 원하는 시간은?<br>
+   <select size="5">
+    <optgroup label="상담 1조">
+     <option>8시 이전</option>
+     <option>8시~9시</option>
+    </optgroup>
+    <optgroup label="상담 2조">
+     <option>9시~10시</option>
+     <option>10시~11시</option>
+     <option>11시~12시</option>
+    </optgroup>
+    <optgroup label="상담 3조">
+     <option>12시~13시</option>
+     <option>13시~14시</option>
+     <option>14시~15시</option>
+     <option>15시~16시</option>
+    </optgroup>
+    <optgroup label="상담 4조">
+     <option>16시~17시</option>
+     <option>17시~18시</option>
+     <option>18시~19시</option>
+    </optgroup>
+   </select>
+  </p><br>
+
+
+  <hr>
+  <h2>7. input type="file"</h2>
+  <label for="ph">증명사진</label> <input type="file" id="ph">
+
+
+  <hr>
+  <h2>8. input type="hidden" 숨은 정보 전송용</h2>
+  사용자에게 보이지 않는 정보를 함께 전송
+  <input type="hidden" value="abcd">
+
+
+  <hr>
+  <h2>9. input type="image" 전송용 이미지</h2>
+  <b>src</b> 속성으로 <b>이미지 경로</b> 지정<br>
+  <label>ID <input type="text"></label>
+  <label>PASS <input type="password"></label>
+  <input type="image" src="img/login.png" width="50">
+
+
+  <hr>
+  <h2>10. input type="search" 검색용 글상자</h2>
+  <input type="serach">
+
+
+  <hr>
+  <h2> . input type="submit/reset/<i>button</i>" 전송/초기화/일반 버튼 </h2>
+   사용자가 입력한 정보를 서버에 전송하거나 전체 초기화하는 폼과 관련된 버튼, <br>
+   특정 목적의 스크립트를 결합해 사용하는 일반 버튼이 있다. <br>
+   <b>value</b>의 값으로 버튼의 글자를 지정. <br>
+
+   <input type="submit" value="전송">
+   <input type="reset" value="취소"> <br>
+   <input type="button" value="Button" onclick="alert('why~~~?')">
+
+
+  <hr> 
+  <h2>button ... /button 전송/초기화/일반 버튼</h2>
+  <button>전송</button>
+  <button type="reset"><b>초기</b>화</button>
+  <button type="button"><img src="img/gif/arrow.gif" alt="arrow">Button</button>
+  
+
+  <hr>
+  <h2>6. input type=" "  </h2>
+  <label> </label> <input type=" ">
+
+ </form>
+
+
+
+
+ </body>
+</html>
+

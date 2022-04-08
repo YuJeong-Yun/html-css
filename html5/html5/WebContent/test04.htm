@@ -1,0 +1,222 @@
+﻿<html>
+ <head>
+  <title>html list </title>
+  <style type="text/css">
+   table, tr, th, td {  
+    border:1px solid #6a0;
+    }
+  </style>
+ </head>
+ <body>
+<hr>
+ <h1>html list - 목록</h1>
+<hr>
+ <h2>목록의 종류</h2>
+<table>
+ <tr>
+  <td>&lt;ul&gt;</td>
+  <td>순서 없는 목록</td>
+ </tr>
+ <tr>
+  <td>&lt;ol&gt;</td>
+  <td>순서 있는 목록</td>
+ </tr>
+ <tr>
+  <td>&lt;dl&gt;</td>
+  <td>정의 목록</td>
+ </tr>
+</table>
+
+ <hr>
+<h3>1. 순서 없는 목록 - ul (Unordered List) </h3>
+<ul>
+ <li>사과</li>
+ <li>배</li>
+ <li>감</li>
+ <li>귤</li> 
+</ul>
+
+<ul>
+ <li>html</li>
+ <li>css</li>
+ <li>js</li>
+</ul>
+
+
+<ul>
+ <li>web</li>
+ <li>java</li>
+ <li>job</li>
+ <li>oracle</li>
+ <li>PJ</li>
+</ul>
+
+ <hr>
+<h3>2. 순서 있는 목록 - ol (Ordered List) </h3>
+<ol>
+ <li>배</li>
+ <li>사과</li>
+ <li>감</li>
+ <li><mark>귤</mark></li>
+</ol>
+
+<ol>
+ <li>html</li>
+ <li>css</li>
+ <li>js</li>
+</ol>
+
+
+ <hr>
+<h3>3. 정의 목록 - dl (Description List) </h3>
+<p>
+ &lt;dt&gt; 정의 내릴 대상 <br>
+ &lt;dd&gt; 정의 내용
+</p>
+
+<dl>
+ <dt>html?</dt>
+ <dd>Hyper Text Markup Language</dd>
+</dl>
+
+<dl>
+ <dt><b>css</b>?</dt>
+ <dd><b>C</b>ascading <b>S</b>tyle <b>S</b>heets</dd>
+</dl>
+
+<dl>
+ <dt>html?</dt>
+ <dd>Hyper Text Markup Language</dd>
+ <dt>css?</dt>
+ <dd>Cascading Style Sheets</dd>
+</dl>
+
+<dl>
+ <dt>html?</dt>
+ <dd>Hyper Text Markup Language</dd>
+ <dd>웹페이지를 만들어주는 프로그램 언어.</dd>
+ <dd>웹페이지 구조를 담당.</dd>
+</dl>
+
+
+
+<dl>
+ <dt>name</dt>
+ <dd>~~1</dd>
+ <dd>~~2</dd>
+</dl>
+
+<hr>
+<h4>ol의 목록 앞의 모양 지정</h4>
+<p>
+ &lt;ol <i>type="1/a/A/i/I"</i>&gt;
+</p>
+
+<ol type="1">
+ <li>배</li>
+ <li>사과</li>
+ <li>감</li>
+ <li>귤</li>
+</ol>
+
+<ol type="a">
+ <li>배</li>
+ <li>사과</li>
+ <li>감</li>
+ <li>귤</li>
+</ol>
+
+<ol type="A">
+ <li>배</li>
+ <li>사과</li>
+ <li>감</li>
+ <li>귤</li>
+</ol>
+
+<ol type="i">
+ <li>배</li>
+ <li>사과</li>
+ <li>감</li>
+ <li>귤</li>
+</ol>
+
+<ol type="I">
+ <li>배</li>
+ <li>사과</li>
+ <li>감</li>
+ <li>귤</li>
+</ol>
+
+<hr>
+<h4>ol의 목록의 시작 지정</h4>
+<p>&lt;ol <i>start="n"</i>&gt; n은 숫자만</p>
+
+<ol start="3">
+ <li>배</li>
+ <li>사과</li>
+ <li>감</li>
+ <li>귤</li>
+</ol>
+
+<p>&lt;ol <i>start="n"</i> type="*"&gt; 모양과 동시에 적용</p>
+<ol start="6" type="a">
+ <li>배</li>
+ <li>사과</li>
+ <li>감</li>
+ <li>귤</li>
+</ol>
+
+<h5>하위목록 만들기 (목록 안의 목록)</h5>
+<ul>
+ <li>web
+  <ol> 
+   <li>html</li>
+   <li>css</li>
+   <li>js</li>
+  </ol>
+ </li>  
+ <li>java</li>
+ <li>job</li>
+</ul>
+
+
+<ul>
+ <li>coffee
+  <ul>   
+   <li>ame</li>
+   <li>caf</li>
+   <li>moc</li>
+  </ul>
+ </li>
+ <li>tea
+  <ul>   
+   <li>bl</li>
+   <li>re</li>
+   <li>gr</li>
+  </ul>
+ </li>
+ <li>cake
+  <ul>
+   <li>ch</li>
+   <li>st</li>
+   <li>bl</li>
+  </ul>
+ </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+ </body>
+</html>
+
+
+
+

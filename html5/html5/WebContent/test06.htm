@@ -1,0 +1,100 @@
+﻿<html>
+ <head>
+  <title>a로 링크 걸기</title>
+ </head>
+ <body>
+ <nav>
+  <a href="test06-1.htm">링크-2(내부링크)</a>
+  <a href="test06-1.htm#nav">gallery menu</a>
+ </nav>
+
+
+
+ <h1>a로 링크 걸기</h1>
+  <p>&lt;a href="주소값(경로)"&gt; ... &lt;/a&gt; <br>
+    <i>상대경로 또는 절대경로</i><br>
+   
+   ...에 해당하는 링크 걸린 텍스트는 밑줄이 생기고 마우스커서가 손모양으로 바뀌며 <br>
+   색상은 초기 링크 - 파랑, 방문한 링크 - 보라, 활성화 링크 - 빨강 중에서 나타남.
+  </p>
+ <h2 id="link">링크로 나타내기</h2>
+ <p>
+  1. 웹페이지 (*.htm/*.html) <br>
+   <a href="test05.htm">이미지 수업보기</a>
+   <a href="test01.htm">html수업 첫 날 보기</a>
+   <a href="test03.htm">table 수업보기</a> <br>
+  2. 웹주소 (URL) <br>
+   <a href="https://www.w3schools.com/">웹다이쏘</a> 
+   <a href="https://www.daum.net/">daum</a> <br>
+ 
+  3. 이미지파일 (*.gif/*.jpg/*.png/ ...)<br>   
+  <a href="../image/colorpicker2000.png">colorpicker</a>   
+  <a href="pic_trulli.jpg">white house</a> <br>   
+
+  4. 동영상파일 (*.mp4/*.webm/*.ogg)<br>
+   <a href="sunrise.mp4">sunrise</a> <br>
+
+  5.텍스트파일 (*.txt)<br>
+    <a href="../text.txt">textfile</a>  
+ </p>
+
+ <p>
+  * 웹브라우저가 처리 불가능한 파일을 링크 걸면 다운로드 됨. <br>
+  <a href="html.zip">html.zip</a>
+ </p>
+
+ <hr>
+ <h2>target - 링크를 여는 방식 지정하기 </h2>
+ <p>
+  <a href="https://www.naver.com/" target="_blank">naver.com</a>
+  <a href="sunrise.mp4" target="_blank">tab sunrise</a> <br>
+  새 탭에서 링크열기(target="_blank")
+ </p>
+ 
+ <ul>
+  <li>target="_self" (기본) 현재 위치에 링크 열기</li>
+  <li><b>target="_blank" 새 탭에서 링크 열기</b></li>
+  <li>target="_top" 프레임구조에서 나뉨없이 전체에 링크 열기</li>
+  <li>target="_parent" 한단계 상위창에 링크 열기</li>
+ </ul>
+
+ <h3>이미지에 링크 걸기</h3>
+ <p>
+  &lt;a href="주소값(경로)"&gt; &lt;img src="이미지경로" alt=""&gt; &lt;/a&gt;
+ </p>
+
+ <p>
+  로고이미지 클릭시 해당 사이트로 이동
+  <a href="https://www.daum.net/" target="_blank">
+  <img src="daumlogo.png" alt="daum" width="100"></a> <br>
+ 
+  썸네일이미지 클릭시 원본이미지 보여주기
+  <a href="img_girl.jpg" target="_blank">
+  <img src="img_girl.jpg" alt="girl" width="50"></a> <br>
+ </p>
+
+ <hr>
+ <h3>mailto: - 이메일 링크 걸기</h3>
+ <a href="mailto:class@itwillbs.co.kr">class@itwillbs.co.kr</a>
+
+ <a href="mailto:master@itwill.co.kr">관리자에게 문의메일 보내기</a>
+ <a href="mailto:yyj1999@gmail.com">
+  <img src="img/email.png" alt="email" width="100"></a>
+
+ <hr>
+ <h2>페이지 제일 위로 이동하는 top link</h2>
+ <a href="#">top</a>
+
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
