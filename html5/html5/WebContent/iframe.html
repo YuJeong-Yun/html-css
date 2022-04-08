@@ -33,6 +33,10 @@
 	
 	<hr>
 	<h1>iframe 안에 링크 열어주기</h1>	
+	<p>
+		ifram ... <mark>name="abc"</mark> --- iframe에 name속성의 값을 설정 후
+		a href=" " <mark>target="abc"</mark> --- 링크 걸 떄 a에 target속성의 값을 동일하게 잡아줌
+	</p>
 	
 	<iframe src="test01.htm" width="1000" height="600" name="htmlbox"></iframe>
 	<nav>
@@ -47,5 +51,14 @@
 		<a href="test07-1.htm" target="htmlbox">test07-1</a>
 	</nav>
 	
+	
+	<iframe src="./img/img1.jpg" width="500" height="400" name="image"></iframe>
+	<nav>
+		<a href="./img/img1.jpg" target="image">사진1</a>
+		<a href="./img/img2.jpg" target="image">사진2</a>
+		<a href="./img/img3.jpg" target="image">사진3</a>
+		<a href="./img/email.png" target="image">사진4</a>
+		<a></a>
+	</nav>
 </body>
 </html>

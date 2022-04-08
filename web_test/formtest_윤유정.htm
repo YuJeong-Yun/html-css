@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+ <title>ITWILL회원가입</title>
+</head>
+<body>
+ <h1>ITWILL 회원가입</h1>
+ <input type="text" value="자바(JAVA) 개발자 양성" readonly="readonly">과정<br><br>
+
+
+ <form action="form.html" method="get">
+  <fieldset>
+  <legend>[ 필수 입력 ]</legend>
+
+   ♣ 이름 <input type="text" required="required"><br>
+   ♣ 아이디 <input type="text" placeholder="6~10자 영문과 숫자 조합"  minlength="6" maxlength="10" required="required"><br>
+   ♣ 비밀번호 <input type="password" placeholder="8~12자 영문,숫자,특수문자" minlength="8" maxlength="12" required="required"><br>
+   <br>
+   ♣ 성별 <br>
+     <label><input type="radio" name="gender" value="남" required="required">남</label><br>
+     <label><input type="radio" name="gender" value="여" required="required">여</label><br>
+     <label><input type="radio" name="gender" value="기타" required="required">기타</label><br>
+   <br>
+   ♣ 생년월일 <input type="date" required="required"><br>
+   ♣ 전화번호 <input type="tel" placeholder="(예시)010-777-8888" required="required"><br>
+   ♣ email <input type="email" required="required"><br>
+
+   <hr><br>
+   ♣ 아이티윌부산이 제공하는 정보를 받으시겠습니까? <br>
+    <label><input type="radio" name="itwillbs">받습니다</label><br>
+    <label><input type="radio" name="itwillbs">받지 않겠습니다</label><br>
+   <br>
+   ♣ 정보나 이벤트 소식을 어떻게 받으시겠습니까?<br>
+    <label><input type="checkbox" name="event">이메일</label>
+    <label><input type="checkbox" name="event">문자</label>
+    <label><input type="checkbox" name="event">카카오톡</label>
+    <label><input type="checkbox" name="event">우편</label>
+  </fieldset>
+ 
+ <br><br>
+ <fieldset>
+  <legend>[ 선택 입력 ]</legend>
+  <br>
+   ♣ 자기소개를 해주세요<br>
+      <textarea cols="100" rows="10">간단히 작성하세요</textarea><br>
+   <br>
+   ♣ 블로그 주소 <input type="url"><br>
+   <br>
+   ♣ 학과를 선택해주세요<br>
+    <select>
+     <option>컴퓨터공학과</option>
+     <option selected="selected">산업공학과</option>
+     <option>기계공학과</option>
+     <option>화학공학과</option>
+     <option>전기전자공학과</option>
+     <option>건축공학과</option>
+    </select><br>
+   <br>
+   ♣ 취미, 특기를 선택해주세요<br>
+    <select multiple size="4">
+     <optgroup label="취미">
+      <option>등산</option>
+      <option>여행</option>
+      <option selected="selected">요리</option>
+      <option>게임</option>
+     </optgroup>
+     <optgroup label="특기">
+      <option selected="selected">운동</option>
+      <option>바둑</option>
+      <option>음악</option>
+      <option>무용</option>
+     </optgroup>
+    </select><br><br>
+  </fieldset>
+  <br>
+  <button><img src="aniyellow.gif">가입</button>
+  <button type="reset"><img src="aniyellow.gif">취소</button>
+
+ </form>
+
+ <br>
+
+</body>
+</html>
