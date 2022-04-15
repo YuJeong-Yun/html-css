@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body {
+	background-color: #ccedff;
+	font-size: 14px;
+	line-height: 1.8;
+}
+
+.ex {
+	background-color: #092;
+	color: #ada;
+}
+
+.pre {
+	white-space: pre;
+}

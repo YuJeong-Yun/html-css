@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css basic</title>
+<link href="basic.css" rel="stylesheet">
+<style type="text/css">
+h1 {
+	color: olive;
+	text-align: center;
+}
+
+h2 {
+	color: maroon;
+}
+
+#id-s {
+	color: #03a;
+}
+
+.ora {
+	color: orange;
+}
+
+pre {
+	font-family: sans-serif;
+	color: #333;
+}
+</style>
+</head>
+<body>
+	<h1>css basic</h1>
+	<p>html문서를 스타일 하는 언어.</p>
+
+	<h2 style="text-decoration: underline;">css 문법</h2>
+	<p class="pre">선택자 { 속성:속성값; 속성:속성값; ... }</p>
+
+	<h2>css적용법 3가지</h2>
+	<ul>
+		<li class="ex">External CSS 외부파일 방식 - css스타일소스를 외부파일로 독립시켜 작성후
+			웹문서와 연결하여 적용. 웹문서의 head태그 내에 link태그를 이용하여 외부css파일을 연결시켜 줌.<br>
+			&lt;link href="*.css" rel="stylesheet"&gt;
+
+		</li>
+
+		<li class="ora">Internal CSS 웹문서내장방식 - 웹문서의 head태그 내에 스타일소스를 작성.
+			<br> <pre>
+   &lt;style type="text/css"&gt; 
+       선택자 { 속성:속성값;}
+   &lt;/style&gt;
+  </pre>
+		</li>
+		<li style="background-color: #d42; color: #fff;">Inline CSS 인라인방식
+			- 웹문서의 body태그 내의 해당 태그 뒤에 직접 스타일소스를 작성. <br> &lt;tag
+			style="속성:속성값;"&gt;
+		</li>
+	</ul>
+
+	<h2>css 대표 선택자 3가지</h2>
+	<ul>
+		<li>tag선택자 - tag 그대로 선택자로 활용. <br> 같은 tag는 동일한 스타일로 모두 적용 됨.
+			자동적용, 강제적용.
+		</li>
+		<li id="id-s">id선택자 - #id값 형태로 선택자로 활용. <br> id값이 중복적용 불가한
+			특징이 있으므로 스타일도 중복적용 불가. 주로 구조적인 목적에 사용 됨.
+		</li>
+		<li class="ora">class선택자 - .class값 형태로 선택자로 활용. <br> class값이
+			중복적용이 가능하므로 여러 요소에 같은 스타일적용 가능. 주로 디자인적인 목적에 사용 됨.
+		</li>
+	</ul>
+
+
+
+</body>
+</html>
