@@ -66,3 +66,61 @@ th, td /* 그룹선택자 A, B, C ...
 .tde04 {
 	text-decoration: none;
 }
+
+.tde04:hover /* 상태선택자 
+ A:hover는 요소A에 마우스오버시의 상태를
+ 지정 */ {
+	text-decoration: underline;
+}
+
+.p04 {
+	border: 4px double;
+}
+
+.p04:hover {
+	border: 4px dotted #900;
+	font-size: 1.1em;
+}
+
+/* 3. text-indent 들여쓰기 */
+.tin01, .tin02, .tin03, .tin04, .tin05 {
+	border: 1px solid;
+}
+
+.tin01 {
+	text-indent: 16px;
+}
+
+.tin02 {
+	text-indent: 2em;
+}
+
+.tin03 {
+	text-indent: 15%;
+}
+
+.tin04 {
+	text-indent: -2em;
+}
+
+.tin04:hover {
+	text-indent: 0;
+}
+
+.tin05 {
+	text-indent: 10%;
+}
+
+/* 4.text-transform 
+        영문 대소문자 변경 */
+.ttr01 {
+	text-transform: none;
+}
+
+.ttr02 {
+	text-transform: lowercase;
+}
+
+.ttr03 {
+	text-transform: uppercase;
+}
