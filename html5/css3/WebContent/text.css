@@ -1,21 +1,23 @@
 @charset "UTF-8";
 
 /* 1. text-align 수평 정렬  */
-
 .ta01 {
 	background-color: #6ee;
 	text-align: left;
 }
+
 .ta02 {
 	background-color: #e6e;
 	width: 300px;
 	text-align: center;
 }
+
 .ta03 {
-	background-color: #ee6;	
+	background-color: #ee6;
 	width: 300px;
 	text-align: right;
 }
+
 .ta04 {
 	text-align: justify;
 }
@@ -23,9 +25,44 @@
 .le {
 	text-align: left;
 }
+
 .ce {
 	text-align: center;
 }
+
 .ri {
 	text-align: right;
+}
+
+#tb01 {
+	border: 1px solid;
+	width: 500px;
+}
+
+th, td /* 그룹선택자 A, B, C ...
+여러 선택자를 ,를 추가하여 동시에 불러와서
+같은 스타일을 적용
+(선택자종류가 서로 달라도 됨) */ {
+	border: 1px solid;
+}
+
+.fw-n {
+	font-weight: normal;
+}
+
+/* 2.text-decoration 글자의 줄 */
+.tde01 {
+	text-decoration: overline;
+}
+
+.tde02 {
+	text-decoration: line-through;
+}
+
+.tde03 {
+	text-decoration: underline;
+}
+
+.tde04 {
+	text-decoration: none;
 }
