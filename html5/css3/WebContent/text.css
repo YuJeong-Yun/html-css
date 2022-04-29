@@ -125,6 +125,10 @@ th, td /* 그룹선택자 A, B, C ...
 	text-transform: uppercase;
 }
 
+.ttr04 {
+	text-transform: capitalize;
+}
+
 /* 5.text-shadow 글자 그림자 */
 #sec05>p {
 	/* 1. 관계선택자 A>B는
@@ -145,6 +149,11 @@ th, td /* 그룹선택자 A, B, C ...
 
 #sec05 i {
 	font-size: 0.7em;
+}
+
+#sec05>div {
+	white-space: pre;
+	/* 공백처리를 소스 그대로  */
 }
 
 .tsh01 {

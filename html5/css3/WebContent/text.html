@@ -2,54 +2,51 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>text-</title>
+<title>text- 로 시작하는 글자 속성</title>
 <link href="text.css" rel="stylesheet">
 <link href="style.css" rel="stylesheet">
 </head>
 <body>
-	<h1>text-</h1>
+	<h1>text- 로 시작하는 글자 속성</h1>
 
 	<ul>
 		<li>text-align: ; 수평 정렬 지정</li>
 		<li>text-decoration: ; 글자의 여러 줄들 지정</li>
 		<li>text-indent: ; 들여쓰기 지정</li>
+		<li>text-transform: ; 영문의 대소문자 변경</li>
 		<li>text-shadow: ; 글자의 그림자 지정</li>
 		<li>text-overflow: ; 영역 밖의 글자 지정</li>
 	</ul>
 
 	<section id="sec01">
 		<h2>text-align: ; 수평 정렬 지정</h2>
-		해당 태그 영역의 내용이 수평방향으로 ~에 정렬됨
-
+		해당 태그 영역의 내용이 수평방향으로 ~에 정렬 됨
 		<p class="ta01">
-			text-align: left; <br> 수평 정렬 지정
+			text-align:left; <br> 수평 정렬 지정
 		</p>
 		<p class="ta02">
-			text-align: center; <br> 수평 정렬 지정
+			text-align:center;<br> 수평 정렬 지정
 		</p>
 		<p class="ta03">
-			text-align: right; <br> 수평 정렬 지정
+			text-align:right;<br> 수평 정렬 지정
 		</p>
-		<p class="ta04">
-			text-align: justify; <br> 수평 정렬 지정 Lorem ipsum dolor sit amet,
-			consectetur adipiscing elit. Maecenas arcu urna, volutpat vitae
-			condimentum a, ornare pharetra felis. Nunc varius suscipit tellus in
-			dignissim. Nulla a cursus tellus. Cras neque lorem, dapibus eu
-			gravida ac, placerat ut risus. Nunc sed purus in velit ullamcorper
-			cursus placerat vitae eros. Aliquam faucibus metus diam, eu
-			condimentum nunc mattis a. Pellentesque ultricies, urna a condimentum
-			consequat, nisl erat volutpat massa, nec pellentesque lacus nibh
-			vitae nisl. 얼음이 이상, 꽃이 같이, 힘있다. 찬미를 가치를 영락과 실로 들어 봄바람이다. 그것은 더운지라 힘차게
-			있는가?
-		</p>
-		<!-- 무의미한 텍스트 생성기 -->
+		<p class="ta04">text-align:justify; 수평 정렬 지정 Lorem ipsum dolor sit
+			amet, consectetur adipiscing elit. Sed vel nibh nec eros dapibus
+			ultricies sit amet nec ipsum. In ullamcorper tempus volutpat.
+			Pellentesque lobortis ex magna, in pretium tellus accumsan at. Ut sit
+			amet est sit amet turpis sollicitudin mollis. Praesent nisi lorem,
+			lobortis ut aliquet vitae, sodales eu nisl. Vestibulum interdum
+			scelerisque cursus.흙으로 잠, 별 봅니다. 어머님, 나는 나의 까닭입니다. 멀듯이, 속의 이름자를 동경과
+			있습니다. 불러 별 다 무성할 이네들은 우는 많은 가난한 이름과 있습니다. 둘 계절이 흙으로 버리었습니다. Duis a
+			dui suscipit, dictum sapien in, ullamcorper arcu.</p>
+		<!-- 무의미한 텍스트생성기 -->
 		https://www.lipsum.com/ https://hangul.thefron.me/
-
 		<p>
-			<input type="text" value="text-align: ;" class="le"> <input
-				type="text" value="text-align: ;" class="ce"> <input
-				type="text" value="text-align: ;" class="ri">
+			<input type="text" value="text-align:left;" class="le"> <input
+				type="text" value="text-align:center;" class="ce"> <input
+				type="text" value="text-align:right;" class="ri">
 		</p>
+
 		<table id="tb01">
 			<tr>
 				<th class="le">th left</th>
@@ -110,7 +107,7 @@
 			text-shadow: n n n n ; <i>글자의 그림자</i> 지정
 		</h2>
 		<div>각 자리별 n의 의미는 (그림자의 X방향거리값) (그림자의 Y방향거리값) (퍼짐값) (색상) 음수가능
-			음수가능</div>
+			음수가능 * box-shadow: n n n n ; 영역의 그림자 지정</div>
 		<p class="tsh01">text-shadow : 6px 0 0 #33a; 글자 그림자</p>
 		<p class="tsh02">text-shadow: 0 6px 0 #33a; 글자 그림자</p>
 		<p class="tsh03">text-shadow: 0 0 6px #33a; 글자 그림자</p>
@@ -119,7 +116,16 @@
 		<p class="tsh06">text-shadow: ; 글자 그림자</p>
 		<p class="tsh07">text-shadow: ; 글자 그림자</p>
 		<p class="tsh08">text-shadow: ; 글자 그림자</p>
-		<p class="tsh09">text-shadow: ; 글자 그림자</p>
+		<p class="tsh09">text-shadow: -3px -3px 10px #6de, 3px 3px 10px
+			#d0e; 글자 그림자</p>
 	</section>
+
 </body>
 </html>
+
+
+
+
+
+
+
