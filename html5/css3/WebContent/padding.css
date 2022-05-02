@@ -1,0 +1,87 @@
+@charset "UTF-8";
+ /* 1. padding  방향별  적용  */
+ 
+#ul-dr {border:1px solid #9ad;
+/*  padding-left: 0; */}
+
+#ul-dr>li {border:1px solid;}
+
+.pd-t {padding-top: 20px;}
+.pd-r {text-align: right;
+ padding-right: 20px;}
+.pd-b {padding-bottom: 20px;}
+.pd-l {padding-left: 20px;}
+
+
+ /* 2. padding값의 갯수별 적용 */
+#ul-n>li {border:1px solid #03a;}
+
+.pd-n01 {padding: 50px;}
+.pd-n02 {padding: 50px 0;}
+.pd-n03 {padding: 50px 0 10px;}
+.pd-n04 {padding: 0 20% 20px 40%;}
+
+
+
+  /* form 요소에서 적용 */
+form {/* border: 1px solid; */
+ padding: 30px 12px; }
+
+label {padding-left: 1em;}
+
+#nm {padding:0.5em; }
+#id {padding:0.5em 1em;}
+#tel {padding:0.5em 1em 0.2em;}
+#src {padding:0.5em 1em 0.7em 1.2em;}
+
+
+ /* img에서 적용 */
+#ph-box>img {
+width: 400px;	}
+
+.ph01 {border: 24px solid #483;
+padding: 60px;}
+
+.ph02 {border: 1px solid;
+padding: 20px 20px 150px;}
+
+.ph03 {border: 1px solid;
+padding:20px 20px 150px;
+border-radius: 10px
+/* 모서리라운딩 효과 */; }
+
+.sh {box-shadow: 2px 3px 10px #333;}
+
+.ph04 {border-radius: 50%;}
+.ph04:hover {
+/* 마우스오버시 적용 */
+border-radius: 0;}
+
+
+    /* table의 셀에서 적용 */
+#tb th {border: 1px solid #39a;
+ padding: 0.5em 2em;}
+#tb td {border: 1px solid #a39;
+ padding: 0.3em 2em;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
